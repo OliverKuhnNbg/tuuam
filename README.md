@@ -1,7 +1,9 @@
 # tuuam
 TUUAM (The Ultimate Urban Art Manager) a AI based LoRa Trainingsmanger
 
-#Project Structure:
+### 📂 Project Structure
+
+```text
 tuuam-project/
 ├── tuuam-backend/          # Spring Boot Orchestrator (Java 21)
 │   ├── src/main/java/com/tuuam/
