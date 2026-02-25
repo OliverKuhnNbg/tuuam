@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: tuuam-backend
+  
+  # Verbindung zur PostgreSQL aus deiner docker-compose.yml
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tuuam_db
+    username: tuuam_user
+    password: tuuam_password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # Erstellt Tabellen automatisch
+    show-sql: true     # Zeigt uns im Log, was in der DB passiert
+
+  ai:
+    vertex:
+      ai:
+        gemini:
+          project-id: ${GCP_PROJECT_ID} # Deine Google Cloud Projekt ID
+          location: us-central1
+          chat:
+            options:
+              model: gemini-1.5-pro-001
