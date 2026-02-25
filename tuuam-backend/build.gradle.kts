@@ -29,7 +29,7 @@ extra["springAiVersion"] = "2.0.0-M2"
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-webmvc")
-	implementation("org.springframework.ai:spring-ai-starter-model-vertex-ai-embedding")
+	implementation("org.springframework.ai:spring-ai-starter-model-vertex-ai-gemini")
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-docker-compose")
 	runtimeOnly("org.postgresql:postgresql")
